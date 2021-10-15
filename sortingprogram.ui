@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SortingProgram</class>
+ <widget class="QMainWindow" name="SortingProgram">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>360</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>360</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SortingProgram</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_16">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="sort_tab">
+       <attribute name="title">
+        <string>Сортировка</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QGroupBox" name="settings_box">
+          <property name="title">
+           <string>Настройки</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QGroupBox" name="method_box">
+             <property name="title">
+              <string>Метод сортировки</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QComboBox" name="sortingMethod_box">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>1) Сортировка вставками</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2) Пузырьковая сортировка</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3) Сортировка Шейкером</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4) Сортировка слиянием</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5) Сортировка Пирамидой (двоичной кучей)</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6) Быстрая сортировка</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7) Сортировка подсчётом</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8) Поразрядная сортировка</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="size_box">
+             <property name="title">
+              <string>Размер массива</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QComboBox" name="arraySize_box">
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="currentIndex">
+                 <number>9</number>
+                </property>
+                <property name="maxVisibleItems">
+                 <number>20</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>16</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>32</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>64</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>128</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>256</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>512</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1024</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2048</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4096</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8192</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>16384</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>32768</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>65536</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>131072</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>262144</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>524288</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1048576</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="sorting_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Сортировка</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QGroupBox" name="time_box">
+             <property name="title">
+              <string>Время сортировки</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QPushButton" name="buttOntimeSort">
+                <property name="text">
+                 <string>Высчитать</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout1">
+                <item>
+                 <widget class="QLabel" name="label_nanotime">
+                  <property name="text">
+                   <string>Наносекунд:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="line_nanotime">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout2">
+                <item>
+                 <widget class="QLabel" name="label_militime">
+                  <property name="text">
+                   <string>Милисекунд:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="line_militime">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout3">
+                <item>
+                 <widget class="QLabel" name="label_time">
+                  <property name="text">
+                   <string>Секунд:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="line_time">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="count_box">
+             <property name="title">
+              <string>Количество</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <widget class="QPushButton" name="buttOncountSort">
+                <property name="text">
+                 <string>Высчитать</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout4">
+                <item>
+                 <widget class="QLabel" name="label_passes">
+                  <property name="text">
+                   <string>количество проходов:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="line_passes">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout5">
+                <item>
+                 <widget class="QLabel" name="label_comparisons">
+                  <property name="text">
+                   <string>количество сравнений:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="line_comparisons">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout6">
+                <item>
+                 <widget class="QLabel" name="label_permutations">
+                  <property name="text">
+                   <string>количество перестановок:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="line_permutations">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>90</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="test_tab">
+       <attribute name="title">
+        <string>Тест</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QGroupBox" name="test_settings_box">
+          <property name="title">
+           <string>Настройки</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QGroupBox" name="test_method_box">
+             <property name="title">
+              <string>Метод сортировки</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QComboBox" name="test_sortingMethod_box">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>1) Сортировка вставками</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2) Пузырьковая сортировка</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3) Сортировка Шейкером</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4) Сортировка слиянием</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5) Сортировка Пирамидой (двоичной кучей)</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6) Быстрая сортировка</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7) Сортировка подсчётом</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8) Поразрядная сортировка</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="test_size_box">
+             <property name="title">
+              <string>Размер массива</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QComboBox" name="test_arraySize_box">
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="currentIndex">
+                 <number>4</number>
+                </property>
+                <property name="maxVisibleItems">
+                 <number>6</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>16</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>32</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>64</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="test_sorting_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Сортировка</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QPushButton" name="buttTestingSort">
+             <property name="text">
+              <string>Протестировать программу</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="generation_testing_box">
+             <property name="title">
+              <string>Генерация</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item>
+               <widget class="QTextEdit" name="generation_field">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="sorting_testing_box">
+             <property name="title">
+              <string>Сортировка</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="QTextEdit" name="sorting_field">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="aboutprog_tab">
+       <attribute name="title">
+        <string>О программе</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Эта программа предназначена для&lt;br&gt;определения эффективности&lt;br&gt;сортировочных алгоритмов.&lt;br&gt;Программа рандомно генерирует&lt;br&gt;массив и сортирует их разными&lt;br&gt;методами.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
